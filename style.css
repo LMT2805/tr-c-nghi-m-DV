@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#quiz-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#options-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.option {
+    margin: 5px 0;
+}
+
+
+#quiz-container p {
+    margin: 5px 0;
+   
+}
+
+#quiz-container p.ĐÚNG {
+    color: rgb(55, 189, 14); /* Màu chữ cho câu trả lời đúng */
+}
+
+#quiz-container p.SAI {
+    color: red; /* Màu chữ cho câu trả lời sai */
+}
+
+#quiz-container p.question {
+    font-weight: bold; /* In đậm cho nội dung câu hỏi */
+}
+
+#quiz-container p.user-answer {
+    color: blue; /* Màu chữ cho câu trả lời của người dùng */
+}
+
+#quiz-container p.correct-answer {
+    color: rgb(4, 173, 4); /* Màu chữ cho câu trả lời đúng (nếu câu trả lời sai) */
+}
