@@ -1,334 +1,405 @@
 const quizData = [
     {
-        question: "Giao thức (protocol) là gì?",
-        options: ["Là một tiêu chuẩn được sử dụng để định nghĩa một dịch vụ mạng", "Là mô hình mô tả vai trò của các thành phần trong hệ thống mạng", "Là các quy tắc được thiết lập nhằm xác định cách để định dạng, truyền và nhận dữ liệu", "Là tất cả các quy ước để đảm bảo máy tính có thể trao đổi thông tin được với nhau"],
-        correctAnswer: "Là các quy tắc được thiết lập nhằm xác định cách để định dạng, truyền và nhận dữ liệu",
-        userAnswer: null 
-    },
-    {
-        question: "Mô hình Client - Server là gì? ",
-        options: ["là một loại mô hình mạng máy tính bao gồm 02 thành phần là máy chủ và máy khách", "là thể hiện của kiến trúc 2 tầng", "là mô hình mà Client đóng vai trò máy phục vụ, còn Server đóng vai trò giao tiếp người dùng", "là mô hình đơn giản của kiến trúc lập trình MVC"],
-        correctAnswer: "Là một loại mô hình mạng máy tính bao gồm 02 thành phần là máy chủ và máy khách",
-        userAnswer: null
-    },
-    {
-        question: "Dịch vụ World Wide Web là gì?",
+        question: "câu 1: Trong ước lượng phần mềm, phương pháp ước lượng từ dưới lên (bottom-up) cho rằng:",
         options: [
-            "Dữ liệu truyền tải từ Server dưới dạng siêu văn bản",
-            "Là dịch vụ sử dụng giao thức HTTP",
-            "Dịch vụ mạng Internet theo mô hình Client-Server",
-            "Sử dụng dịch vụ www thông qua trình duyệt"
+            "Chi phí sẽ được ước lượng chỉ tiết dựa vào các công việc trong dự án.",
+            "Chi phí sẽ được ước lượng ở mức thấp nhất nếu có thể.",
+            "Ngân sách năm nay sẽ nhiều hơn 20% so với năm trước.",
+            "Ngân sách năm nay sẽ ít hơn 20% so với năm trước."
         ],
-        correctAnswer: "Là dịch vụ sử dụng giao thức HTTP và Sử dụng dịch vụ www thông qua trình duyệt ",
+        correctAnswer: "Chi phí sẽ được ước lượng chỉ tiết dựa vào các công việc trong dự án.",
         userAnswer: null
     },
     {
-        question: "GI-Common Gateway Interface là gì?",
+        question: "câu 2: Chiến lược chuyển giao các rủi ro được thực hiện thông qua:",
         options: [
-            "Là công nghệ thiết kế đồ họa của máy tính giúp cho người dùng có thể tạo ra một hình ảnh mới",
-            "Là một thư viện của ngôn ngữ lập trình C",
-            "Là một framework của Java hỗ trợ truyền gởi thông điệp",
-            "Là một qui ước về cách thức web server gọi thực thi một chương trình"
+            "Mua bảo hiểm để chia sẽ chỉ phí.",
+            "Đề nghị với khách hàng chấp nhận, và chia sẻ rủi ro.",
+            "Báo cáo ban lãnh đạo cấp cao.",
+            "Cả mua bảo hiểm, đề nghị chấp nhận, và báo cáo ban lãnh đạo cấp cao đều đúng."
         ],
-        correctAnswer: "Là một qui ước về cách thức web server gọi thực thi một chương trình",
+        correctAnswer: "Cả mua bảo hiểm, đề nghị chấp nhận, và báo cáo ban lãnh đạo cấp cao đều đúng.",
         userAnswer: null
     },
     {
-        question: "Cú pháp lệnh gcc nào sau đây là đúng khi biên dịch chương trình C/C++?",
+        question: "câu 3: Hoạt động chính ở giai đoạn khởi động dự án là:",
         options: [
-            "gcc -o helloworld.cpp helloworld.cgi",
-            "gcc -o helloworld.c helloworld.cgi",
-            "gcc -o helloworld.cgi helloworld.cpp",
-            "gcc -o helloworld.cgi helloworld.c"
+            "Hoạch định nguồn nhân lực dự án.",
+            "Phát triển điều lệ dự án.",
+            "Phát triển kế hoạch dự án.",
+            "Lập báo cáo nghiên cứu khả thi."
         ],
-        correctAnswer: "gcc -o helloworld.cgi helloworld.c",
+        correctAnswer: "Phát triển kế hoạch dự án.",
         userAnswer: null
     },
     {
-        question: "Lệnh nào sau đây cho phép cài đặt Apache2 vào HĐH Ubuntu?",
+        question: "câu4: Các nghiên cứu gần đây chỉ ra lượng phần rằng ước lượng phần mềm có sai số khoảng:",
         options: [
-            "sudo apt add apache2",
-            "sudo apt-get install apache2",
-            "sudo apt setup apache2",
-            "sudo apt install apache2"
+            "30%",
+            "20%",
+            "25%",
+            "35%"
         ],
-        correctAnswer: "sudo apt-get install apache2",
+        correctAnswer: "30%",
         userAnswer: null
     },
     {
-        question: "Trong lập trình CGI, QUERY_STRING là gì?",
+        question: "câu 5: Điều chỉnh lịch trình nhiệm vụ để triển khai nguồn nhân lực hiệu quả hơn được gọi là:",
         options: [
-            "Chuỗi truy vấn cơ sở dữ liệu",
-            "Là các giá trị của các input được nhập bởi người dùng từ form",
-            "Dữ liệu của form được mã hóa và nối vào sau URL của CGI",
-            "Tham số cấu hình mà Web Server gởi về Client"
+            "Tài nguồn lực.",
+            "Điều chỉnh nguồn lực.",
+            "Tối ưu hoá nguồn lực.",
+            "Tăng tốc nguồn lực."
         ],
-        correctAnswer: "Là các giá trị của các input được nhập bởi người dùng từ form",
+        correctAnswer: "Tối ưu hoá nguồn lực.",
         userAnswer: null
     },
     {
-        question: "Web server là gì?",
+        question: "câu 6: Trong tháp nhu cầu của Maslow, sau khi thỏa mãn được nhu cầu an toàn thì con người sẽ có nhu cầu tiếp theo là?",
         options: [
-            "Là máy chủ cài đặt HDH Ubuntu",
-            "Là máy chủ hỗ trợ thực thi Web Service",
-            "Là máy chủ cài đặt các chương trình phục vụ các ứng dụng web",
-            "Là máy chủ lưu trữ các tập tin html"
+            "Nhu cầu giao tiếp.",
+            "Nhu cầu được tôn trọng.",
+            "Nhu cầu sinh lý.",
+            "Nhu cầu tự hoàn thiện."
         ],
-        correctAnswer: "Là máy chủ cài đặt các chương trình phục vụ các ứng dụng web",
+        correctAnswer: "Nhu cầu được tôn trọng.",
         userAnswer: null
     },
     {
-        question: "XML là gì?",
+        question: "câu 7 Khi phân tích giá trị thu được của dự án và biểu diễn trạng thái của dự án bằng biểu đồ thị số khả năng của trạng thái là:",
         options: [
-            "Là dạng tài liệu dùng để đơn giản hóa việc chia sẻ dữ liệu giữa các nền tảng và các hệ thống khác nhau",
-            "Là ngôn ngữ đánh dấu như HTML",
-            "Là ngôn ngữ đánh dấu được dùng để mô tả dữ liệu",
-            "Là định dạng dùng để lưu trữ nội dung của tập tin .docx, .xlsx"
+            "6",
+            "4",
+            "5",
+            "3"
         ],
-        correctAnswer: "Là ngôn ngữ đánh dấu được dùng để mô tả dữ liệu",
+        correctAnswer: "5",
         userAnswer: null
     },
     {
-        question: "Trong đoạn XML sau: <book category=\"CHILDREN\"><title>Harry Potter</title><author>J K. Rowling</author><year>2005</year><price>29.99</price></book> Từ khóa nào là attribute?",
+        question: "câu 8: Chọn phát biểu đúng về rủi ro:",
         options: [
-            "category",
-            "Title",
-            "CHILDREN",
-            "Harry Potter"
+            "Rủi ro là một sự kiện hoặc trường hợp có tính xác suất.",
+            "Rủi ro có thể ảnh hưởng đến 1 công việc hoặc toàn bộ dự án.",
+            "Rủi ro làm cho dự án có khả năng bị chậm trễ hoặc bị thất bại.",
+            "Cả rủi ro có thể xảy ra."
         ],
-        correctAnswer: "category",
+        correctAnswer: "Cả rủi ro có thể xảy ra.",
         userAnswer: null
     },
     {
-        question: "Trong XML, “Well Formed” nghĩa là gì?",
+        question: "câu 9: Kỹ thuật thu thập yêu cầu phần mềm nào dễ thực hiện và thông tin thu thập được sẽ khách quan và chính xác?",
         options: [
-            "Là tài liệu XML đúng cú pháp",
-            "Là tài liệu mà mỗi phần tử phải có một thuộc tính",
-            "Là tài liệu có nội dung các thẻ phải đặt trong cặp nháy",
-            "Là tài liệu tuân thủ các luật sau: phải có một phần tử gốc, các thẻ phải viết hoa"
+            "Xem xét phần mềm hiện có.",
+            "Xem xét tài liệu.",
+            "Họp nhóm.",
+            "Phòng vẫn."
         ],
-        correctAnswer: "Là tài liệu XML đúng cú pháp",
+        correctAnswer: "Phòng vẫn.",
         userAnswer: null
     },
     {
-        question: "\"XML Parser\" dùng để làm gì?",
+        question: "Câu 10: Những thông tin nào được ghi nhận trong hoạt động giám sát dự án?",
         options: [
-            "Chuyển tài liệu XML thành đối tượng trong Java",
-            "Kiểm tra xem tài liệu XML có định dạng thích hợp hay không",
-            "Chuyển tài liệu XML thành một đối tượng có thể đọc bởi ngôn ngữ lập trình",
-            "Nén tài liệu XML để truyền gởi qua Internet"
+            "Hiện trạng các công việc.",
+            "Kinh phí đã sử dụng.",
+            "Tiến độ thực hiện.",
+            "Cả hiện trạng công việc, kinh phí, và tiến độ đều được ghi nhận."
         ],
-        correctAnswer: "Kiểm tra xem tài liệu XML có định dạng thích hợp hay không",
+        correctAnswer: "Cả hiện trạng công việc, kinh phí, và tiến độ đều được ghi nhận.",
         userAnswer: null
     },
     {
-        question: "Java Standard Edition (Java SE) Platform là gì?",
+        question: "Câu 11: Trong phương pháp ước lượng điểm trường hợp sử dụng, giá trị của tham số C2, của biểu thức tính yếu tố phức tạp môi trường (EF) có giá trị là:",
         options: [
-            "Cung cấp các API, các kiến trúc chuẩn, các thư viện để xây các ứng dụng Java",
-            "Là một nền tảng được sử dụng để phát triển các ứng dụng web",
-            "Là một nền tảng thực thi cho các ứng dụng Java",
-            "Được thiết kế để giúp các nhà phát triển tạo ra các ứng dụng doanh nghiệp"
+            "- 0,03",
+            "0,3",
+            "0,03",
+            "- 0,3"
         ],
-        correctAnswer: "Cung cấp các API, các kiến trúc chuẩn, các thư viện để xây các ứng dụng Java",
+        correctAnswer: "0,03",
         userAnswer: null
     },
     {
-        question: "Java Servlets là gì?",
+        question: "Câu 12: Chọn hoạt động không phải là cách giảm thiểu tác động của rủi ro nhân viên bỏ dự án:",
         options: [
-            "Là một thành phần web được triển khai trên máy chủ để tạo ra trang web động",
-            "Là công nghệ nhằm thay thế CGI trong việc xây dựng ứng dụng web",
-            "Là công nghệ dựa trên tảng Java để mở rộng và tăng cường sức mạnh cho các web server",
-            "Là một thành phần web được triển khai trên máy chủ để tạo ra trang web động"
+            "Phản ứng nhanh với việc nhân viên bỏ dự án.",
+            "Chuẩn bị nhân sự dự phòng để bổ sung cho dự án.",
+            "Xoay vòng công việc giữa các thành viên trong nhóm.",
+            "Họp để xây dựng đội dự án."
         ],
-        correctAnswer: "Là một thành phần web được triển khai trên máy chủ để tạo ra trang web động",
+        correctAnswer: "Xoay vòng công việc giữa các thành viên trong nhóm.",
         userAnswer: null
     },
     {
-        question: "Phương thức doGet của 1 Servlet dùng để làm gì?",
+        question: "Câu 13: Chiến lược tránh né các rủi ro được thực hiện thông qua:",
         options: [
-            "Truy xuất vào cơ sở dữ liệu để lấy thông tin người dùng",
-            "Xử lý yêu cầu khi người dùng truy xuất vào Servlet thông qua URL",
-            "Dùng để khởi tạo Servlet ở phía Server",
-            "Lấy dữ liệu mà trình duyệt gởi vào Servlet bằng HTTP GET"
+            "Chọn phương pháp, công cụ và con người.",
+            "Thương lượng với khách hàng (hoặc nội bộ) để thay đổi mục tiêu.",
+            "Chuyển rùi ro cho các bên liên quan.",
+            "Cả (A) và (B) đều đúng."
         ],
-        correctAnswer: "Lấy dữ liệu mà trình duyệt gởi vào Servlet bằng HTTP GET",
+        correctAnswer: "Cả (A) và (B) đều đúng.",
         userAnswer: null
     },
     {
-        question: "Nội dung tập JSP bao gồm:",
+        question: "Câu 14: Yếu tố nào sau đây không được đề cập trong nghiên cứu khả thi của dự án phần mềm?",
         options: [
-            " Các thẻ định dạng HTML",
-            " Thẻ Javascript <script> ....</script>",
-            " Thẻ định dạng CSS",
-            " Mã Java bao bọc trong thẻ đặc biệt <% .... %>"
+            "Nghiên cứu thị trường.",
+            "Giải pháp thực hiện dự án.",
+            "Thông tin về sản phẩm.",
+            "Khả năng thực hiện dự án."
         ],
-        correctAnswer: "Các thẻ định dạng HTML; d. Mã Java bao bọc trong thẻ đặc biệt <% .... %>",
+        correctAnswer: "Thông tin về sản phẩm.",
         userAnswer: null
     },
     {
-        question: "Java JDK là gì?",
+        question: "Câu 15: Chọn yếu tố không phải là nguồn gốc của rủi ro trong các dự án phần mềm:",
         options: [
-            "Là một bộ phần mềm cung cấp môi trường phát triển ứng dụng viết bằng ngôn ngữ Java",
-            " Giúp lập trình viên có thể chạy thử để kiểm tra ứng dụng trong quá trình phát triển ứng dụng Java",
-            "Là một công cụ giúp biên dịch các chương trình viết bằng Java",
-            "Là một công cụ giúp cài đặt các Web Server như: Apache, Tomcat,..."
+            "Ngân sách thực hiện dự án.",
+            "Khó khăn về kỹ thuật.",
+            "Thay đổi về phạm vi.",
+            "Sự hiểu biết về kỹ thuật của người dùng."
         ],
-        correctAnswer: "Là một bộ phần mềm cung cấp môi trường phát triển ứng dụng viết bằng ngôn ngữ Java; b. Giúp lập trình viên có thể chạy thử để kiểm tra ứng dụng trong quá trình phát triển ứng dụng Java; c. Là một công cụ giúp biên dịch các chương trình viết bằng Java",
+        correctAnswer: "Ngân sách thực hiện dự án.",
         userAnswer: null
     },
     {
-        question: "Công dụng của lệnh ss trong Ubuntu?",
+        question: "Câu 24: Đối với dự án phần mềm đơn giản và người quản lý đã hiểu rõ các yêu cầu cho nên:",
         options: [
-            " Kiểm tra trạng thái tường lửa",
-            " Liệt kê các tiến trình đang chạy",
-            " Liệt kê các kết nối mạng",
-            " Kiểm tra trạng thái lắng nghe của 1 dịch vụ mạng"
+            "Người quản lý có thể nhớ đầy đủ công việc phải thực hiện.",
+            "Người quản lý không cần lập kế hoạch quản lý phạm vi.",
+            "Người quản lý có tự lập kế hoạch dự án.",
+            "Cả (A), (B) và (C) đều đúng."
         ],
-        correctAnswer: " Liệt kê các kết nối mạng",
+        correctAnswer: "C. Người quản lý có thể lập kế hoạch dự án.",
         userAnswer: null
     },
     {
-        question: "Tomcat là gì?",
+        question: "Câu 25: Phạm vi dự án phần mềm không đề cập đến:",
         options: [
-            "Là một thành phần nằm trong Java JDK",
-            "Là một chương trình giúp thực thi tập tin .WAR",
-            "Là Web Server cho ngôn ngữ Java",
-            "Là một công cụ giúp kiểm tra hoạt động của Java Servlets"
+            "Các kỹ thuật được sử dụng để tạo ra sản phẩm phần mềm.",
+            "Các công việc liên quan đến việc tạo ra sản phẩm phần mềm.",
+            "Thời gian và chi phí phát triển phầm mềm.",
+            "Các quá trình được sử dụng để ra sản phẩm phần mềm."
         ],
-        correctAnswer: " Là Web Server cho ngôn ngữ Java",
+        correctAnswer: "Thời gian và chi phí phát triển phầm mềm.",
         userAnswer: null
     },
     {
-        question: "JDBC là gì?",
+        question: "Câu 26: Kỹ thuật thu thập yêu cầu phần mềm nào hiệu quả nhất nhưng cần rất nhiều thời gian để thực hiện?",
         options: [
-            " Cung cấp cách thức kết nối database, thực thi câu lệnh SQL và xử lý kết quả trả về",
-            " Là một thành phần nằm trong Java JDK",
-            " Là phương tiện dùng để truy xuất CSDL SQL từ một chương trình Java",
-            " Là thành phần bắt buộc trong các ứng dụng web"
+            "Xem xét phần mềm hiện có.",
+            "Phỏng vấn.",
+            "Họp nhóm.",
+            "Ẩn định công việc tạm thời."
         ],
-        correctAnswer: "Cung cấp cách thức kết nối database, thực thi câu lệnh SQL và xử lý kết quả trả về",
-        userAnswer: null
-    },
-    
-     {
-        question: "Connector/J là gì?",
-        options: [
-            " Là một chương trình quản trị CSDL Mysql",
-            " Là một thư viện dùng để viết ứng dụng Java Servlets",
-            " Là JDBC Driver dùng để kết nối đến CSDL Mysql",
-            " Là một thư viện dùng để kết nối đến CSDL MS Sql Server"
-        ],
-        correctAnswer: "Là JDBC Driver dùng để kết nối đến CSDL Mysql",
-        userAnswer: null
-    },
-    
-    {
-        question: "Vai trò Servlet & JSP trong mô hình MVC?",
-        options: [
-            "Servlet chuyển kết quả xử lý cho JSP",
-            "JSP dùng để trình bày thông tin",
-            "Servlet dùng điều khiển và xử lý nghiệp vụ",
-            "JSP dùng để nhận thông tin từ người dùng"
-        ],
-        correctAnswer: "Servlet dùng điều khiển và xử lý nghiệp vụ",
+        correctAnswer: "B. Phỏng vấn.",
         userAnswer: null
     },
     {
-        question: "Các khó khăn trong quá trình tích hợp ứng dụng doanh nghiệp là gì?",
+        question: "Câu 27: Trong phương pháp ước lượng điểm trường hợp sử dụng, yếu tố nào sau đây là yếu tố phức tạp kỹ thuật?",
         options: [
-            "Định dạng dữ liệu của các ứng dụng không thống nhất",
-            "Các ứng dụng được phát triển dựa trên các ngôn ngữ lập trình khác nhau",
-            "Các ứng dụng được xây dựng bởi các công ty khác nhau",
-            "Các hệ thống chạy trên các nền tảng khác nhau"
+            "Tính khả chuyển.",
+            "Khả năng tái sử dụng mã nguồn.",
+            "Tính bảo cao.",
+            "Cả (A), (B) và (C) đều đúng."
         ],
-        correctAnswer: "câu nào cũng đúng",
+        correctAnswer: "Cả (A), (B) và (C) đều đúng.",
         userAnswer: null
     },
-   {
-        question: "Các lĩnh vực áp dụng JMS là gì?",
-        options: [
-            "Nhiều ứng dụng có thể được viết bằng các ngôn ngữ lập trình khác nhau hoặc chạy trên các máy chủ khác nhau có thể giao tiếp với nhau",
-            "Hoạt động của một ứng dụng không phụ thuộc vào hoạt động của ứng dụng khác",
-            "Ứng dụng đòi hỏi phải có tính bảo mật cao",
-            "Hoạt động của một ứng dụng cần phải chờ nhận được phản hồi của ứng dụng khác ngay lập tức"
-        ],
-        correctAnswer: "Nhiều ứng dụng có thể được viết bằng các ngôn ngữ lập trình khác nhau hoặc chạy trên các máy chủ khác nhau có thể giao tiếp với nhau",
-        userAnswer: null
-    },
-    
     {
-        question: "Phần tử gốc của tất cả các tài liệu WSDL là gì?",
+        question: "Câu 28: Dữ liệu nào có thể lý giải số liệu giám sát dự án?",
         options: [
-            "Definition",
-            "Root",
-            "Wsdl-root",
-            "Description"
+            "Báo cáo so sánh với các dữ liệu thu thập trước đó.",
+            "Khuynh hướng tiếp theo của tiến độ dự án.",
+            "Các kế hoạch, biểu đồ, và bảng biểu nên được cập nhật theo thời gian.",
+            "Cả (A), (B) và (C) đều đúng."
         ],
-        correctAnswer: "Description",
+        correctAnswer: "Cả (A), (B) và (C) đều đúng.",
         userAnswer: null
     },
-
     {
-        question: "Các thành phần chính trong kiến trúc Web Service là gì?",
+        question: "Câu 29: Công cụ phổ biến nhất để thiết lập sơ đồ Gantt là:",
         options: [
-            "Service Provider",
-            "Service Requestor",
-            "Service Registry",
-            "Service Description"
+            "Microsoft Word.",
+            "Bảng.",
+            "Microsoft Project.",
+            "Microsoft Visio."
         ],
-        correctAnswer: "Service Description",
+        correctAnswer: "Microsoft Project.",
         userAnswer: null
     },
-    
     {
-        question: "Các thành phần của Web Service là gì?",
+        question: "Câu 30: Yếu tố nào sau đây có thể góp phần ngăn cản nhận diện rủi ro?",
         options: [
-            "UDDI, XML, SOAP",
-            "HTTP, WSDL",
-            "SOAP, UDDI, XML",
-            "SOAP, UDDI, WSDL"
+            "Kỹ thuật.",
+            "Công nghệ.",
+            "Xã hội và tổ chức.",
+            "Cả (A), (B) và (C) đều đúng."
         ],
-        correctAnswer: "SOAP, UDDI, WSDL",
+        correctAnswer: "D. Cả (A), (B) và (C) đều đúng.",
         userAnswer: null
     },
-    
     {
-        question: "Điều nào sau đây là đúng về WSDL? ",
+        question: "Câu 31: Mô hình ước lượng nỗ lực COCOMO có thể áp dụng cho các loại dự án phần mềm nào?",
         options: [
-            "WSDL là một ngôn ngữ lập trình để xây dựng Web Service",
-            "WSDL là định dạng tiêu chuẩn để mô tả một Web Service",
-            "WSDL là một ngôn ngữ để mô tả cách giao tiếp với các Web Service dựa trên XML",
-            "Định nghĩa WSDL mô tả cách truy cập một Web Service và những hoạt động mà nó sẽ thực hiện"
+            "Dự án tổ chức tương đối nhỏ.",
+            "Dự án bên trong, trung gian.",
+            "Dự án nhúng.",
+            "Cả (A), (B) và (C) đều đúng."
         ],
-        correctAnswer: "Định nghĩa WSDL mô tả cách truy cập một Web Service và những hoạt động mà nó sẽ thực hiện",
+        correctAnswer: "Cả (A), (B) và (C) đều đúng.",
         userAnswer: null
     },
-    
-     {
-        question: "Điều nào sau đây là đúng về Web Service? ",
-        options: [
-            "Web Service tương tác với các ứng dụng web khác nhằm mục đích trao đổi dữ liệu",
-            "Web Service được phát triển chủ yếu dựa trên ngôn ngữ Java",
-            "Web Service dựa trên tiêu chuẩn mở (XML, SOAP, HTTP, v.v.)",
-            "Web Service có thể chuyển đổi các ứng dụng hiện có của tổ chức thành các ứng dụng Web"
-        ],
-        correctAnswer: "Web Service dựa trên tiêu chuẩn mở (XML, SOAP, HTTP, v.v.)",
-        userAnswer: null
-    },
-    
     {
-        question: "Web Services là gì?",
+        question: "Câu 38: Các dự án sẽ thành công hơn nếu người quản lý dự án gây ảnh hưởng đến các thành viên bằng:",
         options: [
-            "Là một thành phần giúp lưu trữ và xử lý các yêu cầu của người dùng Internet",
-            "Là một trình ứng dụng web được lưu trữ trên một Web Server",
-            "Là giao diện lập trình ứng dụng cho máy chủ web hoặc trình duyệt web",
-            "Là tập hợp những giao thức và tiêu chuẩn mở được sử dụng để trao đổi dữ liệu giữa các ứng dụng hoặc các hệ thống với nhau"
+            "A. Tiền thưởng",
+            "B. Sự thử thách của công việc.",
+            "C. Quyền lực.",
+            "D. Kỉ luật."
         ],
-        correctAnswer: "Là tập hợp những giao thức và tiêu chuẩn mở được sử dụng để trao đổi dữ liệu giữa các ứng dụng hoặc các hệ thống với nhau",
+        correctAnswer: "B. Sự thử thách của công việc.",
         userAnswer: null
     },
- 
+    {
+        question: "Câu 39: Nguyên nhân dẫn đến thất bại của một dự án phần mềm có thể xảy ra trong giai đoạn nào của dự án?",
+        options: [
+            "A. Lập kế hoạch.",
+            "B. Khởi động.",
+            "C. Thực hiện.",
+            "D. Cả (A), (B) và (C) đều đúng."
+        ],
+        correctAnswer: "D. Cả (A), (B) và (C) đều đúng.",
+        userAnswer: null
+    },
+    {
+        question: "Câu 40: ATWP (Actual time of work performed) là:",
+        options: [
+            "A. Thời gian theo lịch trình cho công việc đã được thực hiện.",
+            "B. Thời gian theo lịch trình cho công việc.",
+            "C. Thời gian thực tế để thực hiện công việc đã hoàn thành.",
+            "D. Cả (A), (B) và (C) đều đúng."
+        ],
+        correctAnswer: "D. Cả (A), (B) và (C) đều đúng.",
+        userAnswer: null
+    },
+    {
+        question: "C. Thời gian thực tế để thực hiện công việc đã hoàn thành.",
+        options: [
+            "A. Phạm vi.",
+            "B. Thời gian.",
+            "C. Con người.",
+            "D. Chi phí."
+        ],
+        correctAnswer: "C. Con người.",
+        userAnswer: null
+    },
+    {
+        question: "Câu 42: Chiến lược nào sau đây được dùng ứng phó với các rủi ro:",
+        options: [
+            "A. Chấp nhận.",
+            "B. Giảm nhẹ.",
+            "C. Tránh.",
+            "D. Cả (A), (B) và (C) đều đúng."
+        ],
+        correctAnswer: "D. Cả (A), (B) và (C) đều đúng.",
+        userAnswer: null
+    },
+    {
+        question: "Câu 43: Khách hàng đưa ra yêu  cầu thay đổi sau khi đội dự án đã thực hiện xong giai đoạn thiết kế, với vai trò là người quản lý dự án thì phương pháp tiếp cận tốt nhất là:",
+        options: [
+            "A. Ước tính tác động của thay đổi về chỉ phí, lịch trình và phê duyệt trước khi tiến hành.",
+            "B. Phân tích ảnh hưởng chỉ tiết đến chỉ phí, lịch trình, đồng thời triệu tập cuộc họp đội dự án.",
+            "C. Thuyết phục khách hàng không thay đổi yêu cầu.",
+            "D. Đưa ra những thay đổi then chốt bắt chấp chi phí và ảnh hưởng của nó, đồng thời thông báo cho quản lý cấp cao."
+        ],
+        correctAnswer: "D. Đưa ra những thay đổi then chốt bắt chấp chi phí và ảnh hưởng của nó, đồng thời thông báo cho quản lý cấp cao.",
+        userAnswer: null
+    },
+    {
+        question: "Câu 44: Trong quản lý nguồn nhân lực dự án, công cụ nào thể hiện cơ cấu của tổ chức theo chức năng?",
+        options: [
+            "A. OBS.",
+            "B. RAM",
+            "C. WBS",
+            "D. RACI"
+        ],
+        correctAnswer: "A. OBS.",
+        userAnswer: null
+    },
+    {
+        question: "Câu 45: Nhận diện và kiểm soát rủi ro trong các dự án phần mềm là:",
+        options: [
+            "A. Công việc đơn giản.",
+            "B. Công việc tương đối đơn giản.",
+            "C. Công việc không hề đơn giản.",
+            "D. Cả (A), (B) và (C) đều sai."
+        ],
+        correctAnswer: "C. Công việc không hề đơn giản.",
+        userAnswer: null
+    },
+    {
+        question: "Câu 46: Trong phân tích giá trị thu được, chỉ số then chốt về chỉ phí là:",
+        options: [
+            "A. BCWS",
+            "B. BCWP",
+            "C. ACWP",
+            "D. Cả (A), (B) và (C) đều đúng."
+        ],
+        correctAnswer: "B. BCWP",
+        userAnswer: null
+    },
+    {
+        question: "Câu 47: BCWP (Budget cost of work performed) là:",
+        options: [
+            "A. Chi phí thực tế của công việc đã hoàn tất.",
+            "B. Chi phí dự tính theo ngân sách của công việc đã hoàn tất.",
+            "C. Chi phí dự tính theo ngân sách của công việc theo kế hoạch.",
+            "D. Cả (A), (B) và (C) đều đúng."
+        ],
+        correctAnswer: "A. Chi phí thực tế của công việc đã hoàn tất.",
+        userAnswer: null
+    },
+    {
+        question: "Câu 48: Quá trình xem xét tất cả các đề xuất thay đổi, phê duyệt các đề xuất thay đổi và thực hiện các thay đổi là:",
+        options: [
+            "A. Quản lý thay đổi.",
+            "B. Quản lý yêu cầu.",
+            "C. Quản lý thay đổi tích hợp.",
+            "D. (A), (B) và (C) đều sai."
+        ],
+        correctAnswer: "A. Quản lý thay đổi.",
+        userAnswer: null
+    },
+    {
+        question: "Câu 49: Khi thành lập đội dự án, người quản lý dự án cần phải biết kỹ năng của từng thành viên tương lai để:",
+        options: [
+            "A. Xác định đội trưởng.",
+            "B. Phân công công việc.",
+            "C. Xác định ngân sách của dự án.",
+            "D. Xác định thời gian thưc hiện dự án."
+        ],
+        correctAnswer: "B. Phân công công việc.",
+        userAnswer: null
+    },
+    {
+        question: "Câu 50: Nhóm quy trình quản lý dự án nào được lặp đi lặp lại trong suốt vòng đời dự án?",
+        options: [
+            "A. Khởi động, lập kế hoạch, kiểm soát.",
+            "B. Khởi động, lập kế hoạch, thực hiện.",
+            "C. Lập kế hoạch, kiểm soát, kết thúc.",
+            "D. Lập kế hoạch, thực hiện, kiểm soát."
+        ],
+        correctAnswer: "D. Lập kế hoạch, thực hiện, kiểm soát.",
+        userAnswer: null
+    }
 ];
+
+
+
+
 
 let currentQuestion = 0;
 let score = 0;
@@ -391,7 +462,7 @@ function showResults() {
         resultHTML += `<p class="${isCorrect ? 'ĐÚNG RỒI GOOD' : 'SAI RỒI NGU'}">CÂU ${index + 1}: ${isCorrect ? 'ĐÚNG' : 'SAI'}</p>`;
         resultHTML += `<p class="question">CÂU ${index + 1}: ${question.question}</p>`;
         resultHTML += `<p class="user-answer">CÂU TRẢ LỜI CỦA MÀY: ${question.userAnswer}</p>`;
-        
+
         if (!isCorrect) {
             resultHTML += `<p class="correct-answer">CÂU TRẢ LỜI ĐÚNG: ${question.correctAnswer}</p>`;
         }
